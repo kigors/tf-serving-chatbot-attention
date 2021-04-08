@@ -31,4 +31,4 @@ Outputs shape:
     - (None, 2048) - hidden state of LSTM after iteration
     - (None, 2048) - cell state of LSTM after interation
 
-Overall traffic usage (rough estimation): 140kB (download) for encoder, 140kB (DL) + 85kB(UL) for every token from decoder. Thus TF serving act as fast local inference server while chatting is recommended to be deployed as a separate server (like flask, jango, etc.).
+Overall traffic usage (rough estimation): 140kB (download) for encoder, 140kB (UL) + 85kB(DL) for every token from decoder. Thus TF serving act as fast local inference server while chatting is recommended to be deployed as a separate server (like flask, jango, etc.).
